@@ -55,4 +55,4 @@ def change_task_status(request, pk):
     task = Task.objects.get(pk=pk)
     task.is_done = not task.is_done
     task.save()
-    return redirect("tasks:index")
+    return redirect("list:index")
